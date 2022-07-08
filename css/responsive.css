@@ -1,0 +1,72 @@
+/* responsive */
+@media (max-width: 1024px) {
+  .d-none {
+    display: block;
+  }
+  .navigation-section .nav-menu {
+    display: none;
+  }
+  .slider-content {
+    padding-right: 120px;
+  }
+  .elementor-row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .mt-30 {
+    margin-top: 30px;
+  }
+  .elementor-column .wrap-title,
+  .elementor-widget-container {
+    padding: 0 0 40px;
+  }
+  .elementor-column .tns-controls [data-controls="prev"] {
+    left: 40px;
+  }
+  .elementor-column .tns-controls [data-controls="next"] {
+    right: 40px;
+  }
+  .about-us {
+    background-position: bottom center;
+  }
+  .elementor-col-50 {
+    width: 100%;
+  }
+  .elementor-wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-right {
+    justify-content: center;
+  }
+  .header-left,
+  .header-right .follow-us {
+    display: none;
+  }
+  .elementor-section {
+    padding: 40px 30px;
+  }
+  .slider-title {
+    font-size: 4.2rem;
+  }
+  .elementor-column .wrap-title .elementor-heading-title {
+    font-size: 25px;
+  }
+
+  .section-title-txt {
+    font-size: 30px;
+  }
+  .event {
+    padding: 60px 20px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
