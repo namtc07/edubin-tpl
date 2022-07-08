@@ -8,10 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="./assets/slick/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/slick/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -246,7 +250,49 @@
                         </ul>
                     </div>
                 </div>
+                <!-- mobile menu -->
+                <div class="header-mobile d-none" id="header-mobile">
+                    <div class="header-mobile-container">
+                        <ul>
+                            <li>
+                                <a href="">Home
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Courses
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Pages
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Events
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Blog
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Shop
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Contact
 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- mobile menu -->
             </div>
             <div class="search-box hide">
                 <div class="wrapper-search">
@@ -261,49 +307,7 @@
             </div>
         </div>
     </header>
-    <!-- mobile menu -->
-    <div class="header-mobile d-none" id="header-mobile">
-        <div class="header-mobile-container">
-            <ul>
-                <li>
-                    <a href="">Home
-                        <i class="fa-solid fa-plus"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">Courses
-                        <i class="fa-solid fa-plus"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">Pages
-                        <i class="fa-solid fa-plus"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">Events
-                        <i class="fa-solid fa-plus"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">Blog
-                        <i class="fa-solid fa-plus"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">Shop
-                        <i class="fa-solid fa-plus"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">Contact
 
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- mobile menu -->
     <main style="margin-top: 130px;">
         <section class="wrapper">
             <div class="slideshow-container">
@@ -581,7 +585,15 @@
                     <div class="elementor-wrapper">
                         <div class="container">
                             <div class="elementor-row">
-                                <div class="elementor-col-50"></div>
+                                <div class="elementor-col-50">
+                                    <div class="elementor-widget-container">
+                                        <div class="edubin-video-popup-wrapper">
+                                            <a style="float:none" class="play-btn" href="#">
+                                                <i class="fa-solid fa-play icon-play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="elementor-col-50"></div>
                             </div>
                         </div>
@@ -590,11 +602,14 @@
             </div>
         </section>
     </main>
+
     <footer></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./assets/slick/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js"></script>
 </body>
 

@@ -341,7 +341,6 @@ body .container {
 .menu-link .sub-menu a:hover::before {
   opacity: 1;
   left: 18px;
-  -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -851,7 +850,7 @@ body .container {
 .featured-contents-slide {
   position: relative;
   margin-bottom: 3rem;
-  width: 36rem;
+  /* width: 36rem; */
   background-color: #fff;
 }
 
@@ -873,11 +872,11 @@ body .container {
 .featured-contents-slide-img {
   cursor: pointer;
   overflow: hidden;
-  height: 24rem;
+  height: 100%;
 }
 
 .featured-contents-slide-riview {
-  padding: 2.8rem 3rem 1.5rem 3rem;
+  padding: 26px;
 }
 
 .featured-course-price > span {
@@ -1029,21 +1028,23 @@ i.fa-solid.fa-angle-left.slick-arrow {
   width: 100%;
   background: #fff;
   overflow-y: scroll;
+  padding: 0 25px;
   height: 0;
   z-index: 99;
   transition: 1s;
 }
 .header-mobile-toggle {
   position: absolute;
+  top: 80px;
   right: 0;
   left: 0;
   width: 100%;
   background: #fff;
   overflow-y: scroll;
   padding: 25px;
-  z-index: 999999;
+  z-index: 2;
   height: 410px;
-  animation: open 1s ease;
+  animation: openMenu 1s ease;
 }
 
 .header-mobile > .header-mobile-container > ul {
@@ -1065,14 +1066,63 @@ i.fa-solid.fa-angle-left.slick-arrow {
   justify-content: space-between;
 }
 
-
-@keyframes open {
+@keyframes openMenu {
   from {
-    /* padding: 0; */
     height: 0;
   }
   to {
     height: 410px;
-    /* padding: 25px; */
+  }
+}
+
+/* our-facilites */
+.elementor-widget-container {
+  /* margin: 0 0 0 -320px; */
+}
+.edubin-video-popup-wrapper .play-btn {
+  position: relative;
+  width: 82px;
+  height: 82px;
+  background: radial-gradient(rgba(255, 188, 0, 0.94) 60%, #fac911 62%) !important;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.play-btn:before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  animation: ping 5s infinite forwards;
+  border-radius: 50%;
+  border: 5px solid #fac911;
+  top: -30px;
+  left: -30px;
+  background: #fac911;
+}
+.play-btn .icon-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+}
+@keyframes ping {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+    border: 10px solid seashell ;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+    border: 10px solid seashell;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+    border: 10px solid seashell;
   }
 }

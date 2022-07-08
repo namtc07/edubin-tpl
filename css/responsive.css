@@ -61,6 +61,9 @@
   .event {
     padding: 60px 20px;
   }
+  .slick-slide{
+    width: 380px;
+  }
 }
 
 @media only screen and (max-width: 300px) {

@@ -1,4 +1,12 @@
 "use strict";
+
+const iconMenu = document.querySelector(".mobile-menu-icon");
+const menuResponsive = document.getElementById("header-mobile");
+
+iconMenu.addEventListener("click", () => {
+  menuResponsive.classList.toggle("header-mobile-toggle");
+});
+
 // slidebanner
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -140,33 +148,18 @@ function renderCourses(courses) {
   $(".list-courses").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
     prevArrow: "<i class='fa-solid fa-angle-left'></i>",
     nextArrow: "<i class='fa-solid fa-angle-right'></i>",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 550,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -186,11 +179,4 @@ var slider = tns({
     '<i class="fa-solid fa-angle-right"></i>',
   ],
   speed: 400,
-});
-
-const iconMenu = document.querySelector(".mobile-menu-icon");
-const menuResponsive = document.getElementById("header-mobile");
-
-iconMenu.addEventListener("click", () => {
-  menuResponsive.classList.toggle("header-mobile-toggle");
 });
