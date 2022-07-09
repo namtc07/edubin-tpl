@@ -3,74 +3,95 @@
   .d-none {
     display: block;
   }
+
   .navigation-section .nav-menu {
     display: none;
   }
+
   .slider-content {
     padding-right: 120px;
   }
+
   .elementor-row {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .mt-30 {
     margin-top: 30px;
   }
+
   .elementor-column .wrap-title,
   .elementor-widget-container {
     padding: 0 0 40px;
   }
+
   .elementor-column .tns-controls [data-controls="prev"] {
     left: 40px;
   }
+
   .elementor-column .tns-controls [data-controls="next"] {
     right: 40px;
   }
+
   .about-us {
     background-position: bottom center;
   }
+
   .elementor-col-50 {
     width: 100%;
   }
+
   .elementor-wrapper {
     padding: 0 20px;
   }
+
   .our-facilities .elementor-row {
     flex-wrap: nowrap;
   }
+
   .our-facilities .video-popup-wrapper {
     margin: auto;
   }
+
   .our-facilities .elementor-wrapper-element {
     padding: 0 15px 0 20px;
   }
+
   .teachers .edubin-single-teacher .image img {
     height: 370px;
     width: 370px;
   }
 }
+
 @media (max-width: 786px) {
   .feedback .edubin-testi-single {
     padding: 50px 0 0;
   }
-  .feedback .edubin-testi-single .testimonial-cont{
+
+  .feedback .edubin-testi-single .testimonial-cont {
     padding-top: 0;
   }
 }
-@media (max-width: 767px) {
+
+@media (max-width: 768px) {
   .header-right {
     justify-content: center;
   }
+
   .header-left,
   .header-right .follow-us {
     display: none;
   }
+
   .elementor-section {
     padding: 40px 30px;
   }
+
   .slider-title {
     font-size: 4.2rem;
   }
+
   .elementor-column .wrap-title .elementor-heading-title {
     font-size: 25px;
   }
@@ -78,35 +99,57 @@
   .section-title-txt {
     font-size: 30px;
   }
+
   .event {
     padding: 60px 20px;
   }
+
   .slick-slide {
     width: 380px;
   }
+
   .our-facilities {
     background-position: right;
     background-size: auto;
   }
+
   .our-facilities .elementor-row {
     flex-wrap: wrap;
   }
+
   .our-facilities .video-popup-wrapper {
     margin: auto;
     padding-top: 20px;
   }
+
   .our-facilities .elementor-wrapper-element {
     padding: 0 15px 0 20px;
   }
+
+  .woocommerce.woocommerce-addons-wrapper ul.products.columns-4 li.product {
+    width: 35%;
+  }
+
+  .list-news .new-item {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
 }
+
 @media (max-width: 575px) {
   .teachers .elementor-teacher {
     flex: 100%;
     max-width: 100%;
   }
+
+  .woocommerce ul.products.columns-4 li.product a img {
+    padding: 5px;
+  }
 }
 
 @media only screen and (max-width: 300px) {
+
   .prev,
   .next,
   .text {

@@ -20,20 +20,16 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
+  if (n > slides.length) slideIndex = 1;
+
+  if (n < 1) slideIndex = slides.length;
+
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
+  if (slideIndex > slides.length) slideIndex = 1;
+
   slides[slideIndex - 1].style.display = "block";
 }
 
@@ -74,7 +70,7 @@ function getCourses() {
 }
 
 function renderCourses(courses) {
-  const listCourses = document.getElementById("1111");
+  const listCourses = document.getElementById("list-courses");
 
   const renderList = courses.map((course) => {
     let rateStar = "";
@@ -87,61 +83,59 @@ function renderCourses(courses) {
     }
 
     return `
-        <div class="featured-contents-slides-content">
-            <div class="featured-contents-slide">
-                <div class="featured-course-price">
-                    <span>${course.level}</span>
+    <div class="featured-contents-slides-content">
+      <div class="featured-contents-slide">
+        <div class="featured-course-price">
+          <span>${course.level}</span>
         </div>
         <div class="featured-course-bookmark">
-            <span><i class="fa-regular fa-bookmark"></i></span>
+          <span><i class="fa-regular fa-bookmark"></i></span>
         </div>
         <div class="featured-contents-slide-img">
-            <img src="${course.image}" alt="">
+          <img src="${course.image}" alt="">
         </div>
         <div class="featured-contents-slide-riview">
-            <div class="featured-contents-slide-riview-top">
-                <div class="slide-riview-rate">
-                    <div class="slide-riview-rate-star">
-                        ${rateStar}
-                    </div>
-                    <div class="slide-riview-rate-review">
-                        <span>${course.rate}</span>
-                        <span>(${course.rate_quantity})</span>
-                    </div>
-                </div>
-                <h4>
-                    <a href="">${course.name}</a>
-                </h4>
-                <div class="featured-user-duration">
-                    <span> <i class="fa-solid fa-user"></i></i>${course.total_enrolled}</span>
-                    <span><i class="fa-solid fa-clock"></i>${course.duration}</span>
-                </div>
+          <div class="featured-contents-slide-riview-top">
+            <div class="slide-riview-rate">
+              <div class="slide-riview-rate-star">
+                ${rateStar}
+              </div>
+              <div class="slide-riview-rate-review">
+                <span>${course.rate}</span>
+                <span>(${course.rate_quantity})</span>
+              </div>
             </div>
-            <div class="featured-contents-slide-riview-middle">
-                <div class="riview-middle-img">
-                    <img src="./assets/image/students/student_1.jpg"
-                        alt="">
-                    <div class="riview-middle-img-name">
-                        <span class="sub">by</span>
-                        <span><a href="">${course.teacher}</a></span>
-                        <span class="sub">in</span>
-                        <span><a href="">${course.categories}</a></span>
-
-                    </div>
-                </div>
+            <h4>
+              <a href="">${course.name}</a>
+            </h4>
+            <div class="featured-user-duration">
+              <span> <i class="fa-solid fa-user"></i></i>${course.total_enrolled}</span>
+              <span><i class="fa-solid fa-clock"></i>${course.duration}</span>
             </div>
-            <div class="featured-contents-slide-riview-bottom">
-                <div class="featured-cost">
-                    <p>${course.price}$</p>
-                </div>
-                <div class="featured-buy">
-                    <a href=""><i class="fa-solid fa-cart-shopping"></i>${course.total_enrolled}</a href="">
-                </div>
+          </div>
+          <div class="featured-contents-slide-riview-middle">
+            <div class="riview-middle-img">
+              <img src="./assets/image/students/student_1.jpg" alt="">
+              <div class="riview-middle-img-name">
+                <span class="sub">by</span>
+                <span><a href="">${course.teacher}</a></span>
+                <span class="sub">in</span>
+                <span><a href="">${course.categories}</a></span>
+              </div>
             </div>
+          </div>
+          <div class="featured-contents-slide-riview-bottom">
+            <div class="featured-cost">
+              <p>${course.price}$</p>
+            </div>
+            <div class="featured-buy">
+              <a href=""><i class="fa-solid fa-cart-shopping"></i>${course.total_enrolled}</a href="">
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-      `;
+    `;
   });
   listCourses.innerHTML = renderList.join("");
 
@@ -170,7 +164,7 @@ function renderCourses(courses) {
 }
 getCourses();
 
-// slider
+// slider tiny
 var slider = tns({
   container: ".mouse-drag",
   mouseDrag: true,
@@ -181,6 +175,7 @@ var slider = tns({
   speed: 400,
 });
 
+// slider slick
 $(".multiple-items").slick({
   infinite: true,
   slidesToShow: 2,
@@ -196,5 +191,34 @@ $(".multiple-items").slick({
         slidesToScroll: 1,
       },
     },
+  ],
+});
+
+$(".list-collab").slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  arrows: false,
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 2,
+  autoplay: true,
+  swipe: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+
   ],
 });
