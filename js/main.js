@@ -119,7 +119,7 @@ function renderCourses(courses) {
             </div>
             <div class="featured-contents-slide-riview-middle">
                 <div class="riview-middle-img">
-                    <img src="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/03/t-3-1-5-100x100.jpg"
+                    <img src="./assets/image/students/student_1.jpg"
                         alt="">
                     <div class="riview-middle-img-name">
                         <span class="sub">by</span>
@@ -179,4 +179,22 @@ var slider = tns({
     '<i class="fa-solid fa-angle-right"></i>',
   ],
   speed: 400,
+});
+
+$(".multiple-items").slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  arrows: false,
+  dots: true,
+  autoplay: true,
+  responsive: [
+    {
+      breakpoint: 786,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });

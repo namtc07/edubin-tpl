@@ -24,7 +24,14 @@ body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
 }
-
+.col-lg-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-sm-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 ol,
 ul {
   list-style: none;
@@ -41,8 +48,23 @@ input:focus-visible {
 .elementor-col-100 {
   width: 100%;
 }
+.items-center {
+  align-items: center;
+}
 .mb-30 {
   margin-bottom: 30px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.text-center {
+  text-align: center !important;
+}
+.p-section {
+  padding: 100px 0 80px;
 }
 /* header main */
 .header-top {
@@ -651,7 +673,7 @@ body .container {
 
 /* about us */
 .about-us {
-  background-image: url(https://thepixelcurve.com/wp/edubin/wp-content/uploads/2020/08/events-bg-img.jpg);
+  background-image: url(/assets/image/background/events-bg-img.jpeg);
   background-position: center right;
   background-repeat: no-repeat;
   padding: 110px 0;
@@ -670,7 +692,6 @@ body .container {
   width: 50%;
 }
 .elementor-wrapper {
-  padding: 0 90px 0 0;
 }
 .elementor-widget:not(:last-child) {
   margin-bottom: 20px;
@@ -806,7 +827,7 @@ body .container {
 /* courses */
 .courses {
   background-color: #f9f9f9;
-  background-image: url(https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/05/course-shape.png);
+  background-image: url(/assets/image/background/featured_courses_background.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1076,14 +1097,37 @@ i.fa-solid.fa-angle-left.slick-arrow {
 }
 
 /* our-facilites */
-.elementor-widget-container {
-  /* margin: 0 0 0 -320px; */
+.our-facilities {
+  background-image: url(/assets/image/background/facilities_bg.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.edubin-video-popup-wrapper .play-btn {
+.our-facilities .elementor-heading-title {
+  color: #fff;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+  padding: 0 0 35px 20px;
+}
+.elementor-widget-container {
+  width: 100%;
+}
+.our-facilities .elementor-wrapper-element {
+  padding: 0 0 0 80px;
+}
+.our-facilities .elementor-element {
+  margin: 0 0 30px;
+}
+.video-popup-wrapper {
+  /* margin: 20px 0 0 -320px; */
+}
+.video-popup-wrapper .play-btn {
   position: relative;
   width: 82px;
   height: 82px;
-  background: radial-gradient(rgba(255, 188, 0, 0.94) 60%, #fac911 62%) !important;
+  background: radial-gradient(rgba(255, 188, 0, 0.94) 60%, #fac911 62%);
   border-radius: 50%;
   position: relative;
   display: block;
@@ -1094,7 +1138,7 @@ i.fa-solid.fa-angle-left.slick-arrow {
   position: absolute;
   width: 150%;
   height: 150%;
-  animation: ping 5s infinite forwards;
+  animation: ping 2s infinite forwards;
   border-radius: 50%;
   border: 5px solid #fac911;
   top: -30px;
@@ -1104,7 +1148,7 @@ i.fa-solid.fa-angle-left.slick-arrow {
 .play-btn .icon-play {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 53%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 30px;
@@ -1113,16 +1157,356 @@ i.fa-solid.fa-angle-left.slick-arrow {
   0% {
     opacity: 0;
     transform: scale(0.2);
-    border: 10px solid seashell ;
+    border: 10px solid seashell;
+    background: rgb(254, 188, 141);
   }
   50% {
     opacity: 0.5;
     transform: scale(0.8);
+    background: rgb(254, 188, 141);
     border: 10px solid seashell;
   }
   100% {
     opacity: 0;
     transform: scale(0.8);
+    background: rgb(254, 188, 141);
     border: 10px solid seashell;
   }
+}
+
+.elementor-image-box-wrapper {
+  display: flex;
+  align-items: center;
+}
+.elementor-image-box-img {
+  margin-right: 30px;
+}
+.elementor-image-box-img img {
+  margin-top: 10px;
+  width: 76px;
+  height: auto;
+}
+.elementor-image-box-content {
+  width: 100%;
+}
+.elementor-image-box-title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.elementor-image-box-description {
+  color: white;
+}
+/* teachers */
+.teachers {
+}
+.teachers .elementor-widget-wrap {
+  padding: 0 90px 0 0;
+}
+.teachers .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.teachers .elementor-teacher {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding: 0 15px;
+}
+.teachers .single-teacher .image {
+  border-radius: 3px;
+  overflow: hidden;
+}
+.single-teacher .image img {
+  height: 305px;
+  object-fit: cover;
+  width: 100%;
+}
+.single-teacher .teacher-content-area {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  width: 80%;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  margin: 0 auto;
+  padding: 0;
+  height: 75px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.single-teacher.active-social .teacher-content {
+  bottom: -25px;
+}
+
+.single-teacher.active-social:hover .teacher-content-area {
+  height: 110px;
+}
+.single-teacher.active-social:hover .teacher-content {
+  bottom: 10px;
+}
+
+.single-teacher .teacher-content {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease;
+  border-radius: 3px;
+  margin: 0 auto;
+  padding: 0;
+}
+.single-teacher .teacher-content a .teacher-name {
+  color: var(--bg-header);
+  font-size: 18px;
+  font-weight: 500 !important;
+  margin: 0 0 5px;
+  padding: 0;
+}
+.single-teacher .teacher-content a .teacher-name:hover,
+.single-teacher .techer-social .social-link:hover {
+  color: var(--primary-color);
+  transition: all 0.3s linear;
+}
+.single-teacher .teacher-content span {
+  font-size: 15px;
+  color: #8a8a8a;
+  font-weight: 400;
+  display: block;
+  padding-bottom: 5px;
+}
+.single-teacher .teacher-content .techer-social {
+  padding-top: 5px;
+}
+.single-teacher .teacher-content a {
+  display: inline-block;
+}
+.single-teacher .techer-social a.social-link {
+  color: #07294d;
+  padding: 0 5px;
+  transition: all 0.3s ease;
+}
+/* feedback */
+.feedback {
+  background-image: url(https://thepixelcurve.com/wp/edubin/wp-content/uploads/2020/06/slider123.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+.feedback .elementor-background-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #07294d;
+  opacity: 0.9;
+}
+.feedback .section-subtitle-txt,
+.feedback .section-title-txt {
+  color: white;
+}
+.feedback .title-sperator {
+  background-color: white;
+}
+
+.feedback .testi-single {
+  position: relative;
+  padding: 20px 0 0;
+  margin-top: 20px;
+}
+.feedback .testi-single .testimonial-thum {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 60%;
+  transform: translateY(-109%);
+}
+.feedback .testi-single .testimonial-thum img {
+  border-radius: 3px;
+  width: 92px;
+  height: 92px;
+  object-fit: cover;
+}
+.feedback .testi-single .testimonial-cont {
+  padding-left: 115px;
+  padding-right: 40px;
+}
+.feedback .testi-single .testimonial-thum .quote {
+  position: absolute;
+  right: -22px;
+  top: -22px;
+}
+.feedback .testi-single .testimonial-thum .quote i {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: #07294d;
+  font-size: 18px;
+}
+
+.feedback .testi-single .testimonial-cont p {
+  color: #f2f2f2;
+  padding-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+.feedback .testi-single .testimonial-cont .name {
+  color: #fff;
+  margin: 0;
+  padding: 0 30px 4px 0;
+  font-size: 18px;
+  font-weight: 700 !important;
+  margin: 0;
+}
+.feedback .testi-1 .slick-dots li {
+  margin: 0 7px;
+  width: 12px;
+  height: 12px;
+}
+.feedback .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: #e3e3e3;
+  border-radius: 100%;
+}
+.feedback .slick-dots li.slick-active button {
+  background: var(--primary-color);
+}
+.feedback .slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  opacity: 0;
+}
+
+/* woocommerce */
+.woocommerce {
+}
+.woocommerce ul.products {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.woocommerce.woocommerce-addons-wrapper ul.products.columns-4 li.product {
+  padding: 0;
+  position: relative;
+  width: 22%;
+}
+.woocommerce ul.products:before,
+.woocommerce ul.products:after {
+  content: " ";
+  display: table;
+}
+.woocommerce ul.products li.product .overlay {
+  background-color: rgba(0, 33, 71, 0.8);
+  content: "";
+  width: 100%;
+  height: 280px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  z-index: 1;
+}
+.woocommerce ul.products li.product .overlay {
+  background-color: rgba(0, 33, 71, 0.8);
+  content: "";
+  width: 100%;
+  height: 325px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  z-index: 1;
+}
+.woocommerce ul.products.columns-4 li.product a img {
+  height: 280px;
+  object-fit: contain;
+  padding: 35px;
+  background: #edf0f2;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  box-shadow: none;
+}
+.edubin-cart-button- {
+  top: 33%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.woocommerce.woocommerce-addons-wrapper ul.products li.product a {
+  text-align: center;
+}
+.woocommerce ul.products li.product a:before {
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+span.edubin-hide-addtocart-text {
+  display: none;
+}
+.woocommerce ul.products > li > div.edubin-cart-button- > a.edubin-cart-link {
+  border: 1px solid var(--primary-color);
+}
+.woocommerce h2.woocommerce-loop-product__title {
+  padding-top: 20px;
+  font-size: 22px;
+  margin-bottom: 15px;
+  transition: all 0.5s ease;
+  font-weight: 700;
+  color: #07294d;
+}
+.woocommerce ul.products li.product .price {
+  color: #212529;
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -35,8 +35,28 @@
   .elementor-wrapper {
     padding: 0 20px;
   }
+  .our-facilities .elementor-row {
+    flex-wrap: nowrap;
+  }
+  .our-facilities .video-popup-wrapper {
+    margin: auto;
+  }
+  .our-facilities .elementor-wrapper-element {
+    padding: 0 15px 0 20px;
+  }
+  .teachers .edubin-single-teacher .image img {
+    height: 370px;
+    width: 370px;
+  }
 }
-
+@media (max-width: 786px) {
+  .feedback .edubin-testi-single {
+    padding: 50px 0 0;
+  }
+  .feedback .edubin-testi-single .testimonial-cont{
+    padding-top: 0;
+  }
+}
 @media (max-width: 767px) {
   .header-right {
     justify-content: center;
@@ -61,8 +81,28 @@
   .event {
     padding: 60px 20px;
   }
-  .slick-slide{
+  .slick-slide {
     width: 380px;
+  }
+  .our-facilities {
+    background-position: right;
+    background-size: auto;
+  }
+  .our-facilities .elementor-row {
+    flex-wrap: wrap;
+  }
+  .our-facilities .video-popup-wrapper {
+    margin: auto;
+    padding-top: 20px;
+  }
+  .our-facilities .elementor-wrapper-element {
+    padding: 0 15px 0 20px;
+  }
+}
+@media (max-width: 575px) {
+  .teachers .elementor-teacher {
+    flex: 100%;
+    max-width: 100%;
   }
 }
 
