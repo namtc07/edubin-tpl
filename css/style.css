@@ -264,7 +264,7 @@ body .container {
   background-color: transparent;
   color: #07294d;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .header-area .logo-brand {
@@ -349,7 +349,7 @@ body .container {
 
 .arrow-right {
   margin-left: -22px;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #7a7a7a;
 }
 
@@ -381,7 +381,7 @@ body .container {
 }
 
 .navigation-section .nav-menu .menu-link i {
-  font-size: 12px;
+  font-size: 1.2rem;
   vertical-align: text-top;
   margin-left: 6px;
 }
@@ -404,7 +404,7 @@ body .container {
   text-transform: none;
   padding: 7px 20px;
   width: 232px;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #7b7b7b;
   display: block;
 }
@@ -586,7 +586,7 @@ body .container {
 }
 
 .slideshow-container .owl-nav {
-  font-size: 16px;
+  font-size: 1.6rem;
   position: absolute;
   left: 0;
   top: 50%;
@@ -626,7 +626,7 @@ body .container {
   right: 10px;
   display: inline-block;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.6rem;
   margin: 0;
   text-align: center;
   cursor: pointer;
@@ -645,7 +645,7 @@ body .container {
 
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 1.5rem;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -709,7 +709,7 @@ body .container {
 .elementor-column .wrap-title .elementor-heading-title {
   color: #fff;
   font-family: "Montserrat", Sans-serif;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 700;
   line-height: 43px;
 }
@@ -727,7 +727,7 @@ body .container {
 .elementor-column .tns-controls [data-controls="next"] {
   z-index: 2;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.6rem;
   height: 38px;
   width: 38px;
   position: absolute;
@@ -821,7 +821,7 @@ body .container {
 
 .section-title-txt {
   font-family: "Montserrat", Sans-serif;
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 700;
   line-height: 58px;
   padding: 0;
@@ -847,7 +847,7 @@ body .container {
 
 .section-subtitle-txt {
   font-family: "Montserrat", Sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
   display: block;
   color: #07294d;
@@ -857,7 +857,7 @@ body .container {
 }
 
 .elementor-text-editor p {
-  margin: 0 0 1.5em;
+  margin: 0 7rem 1.5em 0;
   padding: 0;
   color: #7a7a7a;
 }
@@ -878,7 +878,7 @@ body .container {
 
 .event-title h3 {
   font-family: "Montserrat", Sans-serif;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 700;
   line-height: 43px;
   color: #23252a;
@@ -896,7 +896,7 @@ body .container {
 
 .single-event h4 {
   font-family: "Montserrat", Sans-serif;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   padding-top: 5px;
   padding-bottom: 10px;
@@ -935,7 +935,7 @@ body .container {
 .apply .elementor-heading-title {
   color: #fff;
   font-family: "Montserrat", Sans-serif;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 43px;
 }
@@ -1166,7 +1166,7 @@ body .container {
   border-radius: 3px;
   color: #000;
   border: 2px solid #aaa;
-  font-size: 16px;
+  font-size: 1.6rem;
   text-align: center;
   cursor: pointer;
   transition: all 0.4s linear;
@@ -1252,7 +1252,7 @@ i.fa-solid.fa-angle-left.slick-arrow {
 .our-facilities .elementor-heading-title {
   color: #fff;
   font-family: "Montserrat", Sans-serif;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 700;
   line-height: 43px;
   padding: 0 0 35px 20px;
@@ -1304,7 +1304,7 @@ i.fa-solid.fa-angle-left.slick-arrow {
   left: 53%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 @keyframes ping {
@@ -1353,7 +1353,7 @@ i.fa-solid.fa-angle-left.slick-arrow {
   margin-bottom: 20px;
   color: #fff;
   font-family: "Montserrat", Sans-serif;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
 }
 
@@ -1438,7 +1438,7 @@ i.fa-solid.fa-angle-left.slick-arrow {
 
 .single-teacher .teacher-content a .teacher-name {
   color: var(--bg-header);
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500 !important;
   margin: 0 0 5px;
   padding: 0;
@@ -1451,7 +1451,7 @@ i.fa-solid.fa-angle-left.slick-arrow {
 }
 
 .single-teacher .teacher-content span {
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #8a8a8a;
   font-weight: 400;
   display: block;
@@ -1541,7 +1541,7 @@ i.fa-solid.fa-angle-left.slick-arrow {
   background-color: var(--primary-color);
   border-radius: 50%;
   color: #07294d;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .feedback .testi-single .testimonial-cont p {
@@ -1554,7 +1554,7 @@ i.fa-solid.fa-angle-left.slick-arrow {
   color: #fff;
   margin: 0;
   padding: 0 30px 4px 0;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700 !important;
   margin: 0;
 }
@@ -1701,7 +1701,7 @@ span.hide-addtocart-text {
 
 .woocommerce h2.woocommerce-loop-product__title {
   padding-top: 20px;
-  font-size: 22px;
+  font-size: 2.2rem;
   margin-bottom: 15px;
   transition: all 0.5s ease;
   font-weight: 700;
@@ -1712,7 +1712,7 @@ span.hide-addtocart-text {
   color: #212529;
   display: block;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -1782,12 +1782,12 @@ span.hide-addtocart-text {
 .single-news .news-cont ul li {
   display: inline-block;
   margin-right: 10px;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .single-news .news-cont ul li a {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: .1px;
   text-transform: uppercase;
   color: #8a8a8a;
@@ -1797,7 +1797,7 @@ span.hide-addtocart-text {
 .single-news .news-cont ul li i {
   color: var(--primary-color);
   margin-right: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .single-news .news-cont a {
@@ -1810,17 +1810,19 @@ span.hide-addtocart-text {
   padding-bottom: 20px;
   margin-bottom: 0;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 34px;
 }
 
 /* collab */
-.collab{
+.collab {
   padding: 55px 0 60px;
 }
-.collab .list-collab .img-collab{
+
+.collab .list-collab .img-collab {
   margin: 0 50px;
 }
+
 .collab .slick-slide img {
   display: block;
   width: 100%;
