@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edubin</title>
+    <link rel="shortcut icon" href="https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/06/site-favicon.png"
+        type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
@@ -55,9 +57,9 @@
                     </div>
                     <div class="login-register">
                         <ul>
-                            <li> <a href="#">Login</a></li>
+                            <li> <a href="./register.html">Login</a></li>
                             <li class="top-seperator">/</li>
-                            <li> <a href="#">Register</a></li>
+                            <li> <a href="./register.html">Register</a></li>
                         </ul>
                     </div>
                 </div>
@@ -307,7 +309,7 @@
             </div>
         </div>
     </header>
-    <main style="margin-top: 130px;">
+    <main style="margin-top: 100px;">
         <section class="wrapper">
             <div class="slideshow-container">
                 <div class="mySlides fade">
@@ -359,7 +361,6 @@
                     <div class="owl-prev" onclick="plusSlides(-1)"><i class="fa-solid fa-angle-left"></i></div>
                     <div class="owl-next" onclick="plusSlides(1)"><i class="fa-solid fa-angle-right"></i></div>
                 </div>
-            </div>
             </div>
         </section>
 
@@ -581,7 +582,7 @@
                             <div class="elementor-col-50" style="margin: auto;">
                                 <div class="elementor-widget-container">
                                     <div class="video-popup-wrapper">
-                                        <div style="float:none" class="play-btn">
+                                        <div style="float:none" class="play-btn" id="play-video">
                                             <i class="fa-solid fa-play icon-play"></i>
                                         </div>
                                     </div>
@@ -1240,9 +1241,7 @@
 
             </div>
         </section>
-        <div class="back-top hide">
-            <i class="fa-solid fa-angle-up"></i>
-        </div>
+
     </main>
     <footer class="footer">
         <div class="footer-top">
@@ -1425,7 +1424,9 @@
             </div>
         </div>
     </footer>
-
+    <div class="back-top hide">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
     <div class="YouTubePopUp-Wrap hide">
         <div class="YouTubePopUp-Content">
             <iframe src="https://www.youtube.com/embed/bRRtdzJH1oE?autoplay=0" allowfullscreen=""></iframe>
@@ -1438,6 +1439,10 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/backToTop.js"></script>
+    <script src="./js/slides.js"></script>
+    <script src="./js/renderCourses.js"></script>
+    <script src="./js/openVideo.js"></script>
 </body>
 
 </html>

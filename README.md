@@ -1,1 +1,1 @@
-# edubin-tpl
+DEMO: EDUBIN TEMPLATE ( click here )

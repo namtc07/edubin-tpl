@@ -148,8 +148,21 @@
   .footer .footer-cyperight-wrap {
     justify-content: center;
   }
-  .text-center-f{
+
+  .text-center-f {
     text-align: center;
+  }
+
+  .elementor-widget-container {
+    padding: 0 0 10px;
+  }
+
+  .elementor-text-editor p {
+    margin: 0 1rem 1.5em 0;
+  }
+
+  .teachers .elementor-widget-wrap {
+    padding: 0 40px 40px 0;
   }
 }
 
@@ -166,6 +179,10 @@
   .col-100 {
     max-width: 100% !important;
     flex: 100% !important;
+  }
+
+  .publications .btn-btn {
+margin: 0;
   }
 }
 

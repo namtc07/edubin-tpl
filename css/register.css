@@ -1,0 +1,186 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400 !important;
+}
+
+.breadcrumb {
+    background-image: url(https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/03/e1-5.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 290px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.breadcrumb:before {
+    background-color: #07294d;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.9;
+}
+
+.breadcrumb .page-title {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.breadcrumb .header-breadcrumb {
+    margin-top: 15px;
+    position: relative;
+}
+
+.breadcrumbs .trail-items,
+.breadcrumbs .trail-items li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: 0 0;
+    text-indent: 0;
+}
+
+.header-breadcrumb ul li.trail-end {
+    color: #fff;
+}
+
+.header-breadcrumb a {
+    color: #fff;
+}
+
+.trail-items li:after {
+    content: "\002F";
+    padding: 0 0.5em;
+    color: #edf0f2;
+}
+
+/* form */
+.duo-form {
+    padding: 80px 0;
+    clear: both;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.row-form {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.learn-press-form-login,
+.learn-press-form-register {
+    width: 500px;
+    margin: 0 30px;
+    padding: 40px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%) !important;
+
+}
+
+.learn-press-form-login h3,
+.learn-press-form-register h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.learn-press-form .form-fields .form-field {
+    margin: 0 0 20px;
+}
+
+.learn-press-form-login .form-fields .form-field label,
+.learn-press-form-register .form-fields .form-field label {
+    font-size: 16px;
+    font-weight: 400;
+    user-select: none;
+    margin: 0 0 10px;
+}
+
+.learn-press-form .form-fields .form-field label {
+    display: block;
+    margin: 0 0 10px;
+}
+
+.learn-press-form-login .form-fields .form-field input[type=text],
+.learn-press-form-login .form-fields .form-field input[type=password],
+.learn-press-form-register .form-fields .form-field input[type=text],
+.learn-press-form-register .form-fields .form-field input[type=password] {
+    height: 42px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    line-height: 42px;
+    width: 100%;
+    padding: 8px;
+}
+
+.lp-password-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.lp-password-input .lp-show-password-input {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.lp-password-input .lp-show-password-input:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06e";
+}
+
+.learn-press-form-login form[name=learn-press-login]>p>label,
+.learn-press-form-register form[name=learn-press-register]>p>label {
+    color: #666;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin-right: 0.5em;
+}
+
+.learn-press-form-login button[type=submit],
+.learn-press-form-register button[type=submit] {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+    background: #07294d;
+    border-color: #07294d;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 1;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+.learn-press-form-login button[type=submit]:hover,
+.learn-press-form-register button[type=submit]:hover {
+    color: #333;
+    background-color: #ffc600;
+    border-color: transparent;
+}
