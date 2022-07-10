@@ -6,6 +6,12 @@ const menuResponsive = document.getElementById("header-mobile");
 iconMenu.addEventListener("click", () => {
   menuResponsive.classList.toggle("header-mobile-toggle");
 });
+// back-top
+const backTop = document.querySelector(".back-top");
+
+backTop.addEventListener("click", () => {
+  $("html, body").animate({ scrollTop: 0 }, "300");
+});
 
 // slidebanner
 let slideIndex = 1;
@@ -37,18 +43,33 @@ function showSlides(n) {
 const iconSearch = document.querySelector(".icon-search");
 const searchBox = document.querySelector(".search-box");
 const iconClose = document.querySelector(".btn-close");
+const closeFrame = document.querySelector(".YouTubePopUp-Wrap");
+const openVideo = document.querySelector(".play-btn");
 
 const toggleSearchBox = () => {
   searchBox.classList.toggle("hide");
 };
+const toggleVideo = () => {
+  closeFrame.classList.toggle("hide");
+};
 iconSearch.addEventListener("click", toggleSearchBox);
 iconClose.addEventListener("click", toggleSearchBox);
+searchBox.addEventListener("click", (e) => {
+  if (e.target == e.currentTarget) toggleSearchBox();
+});
+openVideo.addEventListener("click", toggleVideo);
+closeFrame.addEventListener("click", (e) => {
+  if (e.target == e.currentTarget) toggleVideo();
+});
 
 //windowScroll
 const headerTop = document.querySelector(".header-top");
 const header = document.querySelector("#header");
 
 const handleScroll = () => {
+  window.scrollY > 100
+    ? backTop.classList.remove("hide")
+    : backTop.classList.add("hide");
   window.scrollY > 150
     ? header.classList.add("sticky-active")
     : header.classList.remove("sticky-active");
@@ -219,6 +240,5 @@ $(".list-collab").slick({
         slidesToScroll: 2,
       },
     },
-
   ],
 });
