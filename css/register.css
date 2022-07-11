@@ -77,13 +77,17 @@ body {
 .row-form {
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.form-login {
+    margin-bottom: 60px;
 }
 
 .learn-press-form-login,
 .learn-press-form-register {
     width: 500px;
-    margin: 0 30px;
     padding: 40px;
     border: 1px solid #eee;
     border-radius: 6px;
@@ -183,4 +187,13 @@ input[type=checkbox] {
     color: #333;
     background-color: #ffc600;
     border-color: transparent;
+}
+
+@media (max-width:525px) {
+
+    .learn-press-form-login,
+    .learn-press-form-register {
+        width: 400px;
+        transition: all .3s linear;
+    }
 }
